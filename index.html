@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Purchaser</title>
+    <link rel="icon" href="fav.jpg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h2>SMART AIRTIME AND DATA PURCHASE</h2>
+    </header>
+    <div class="maincontent">
+
+        <p>Enter the phone number and the amount below to purchase Airtime or Data the Smart way</p>
+        <label for="phone">Phone NO: </label>
+        <input type="text" id="phone" placeholder="Enter phone number"> <br><br>
+
+        <label for="amount">Amount:</label>
+        <input type="text" id="amount" placeholder="Enter amount"> <br><br>
+        <label for="purchase">
+            <p>Airtime or bundles?</p>
+        </label>
+        <input type="radio" id="airtime" name="purchase-type" value="airtime">
+        <label for="airtime">Airtime</label> <br>
+        <input type="radio" id="data" name="purchase-type" value="data">
+        <label for="data">Data</label> <br><br><br>
+        <button type="submit" id="purchase">Purchase</button>
+    </div>
+    <div class="output">
+        <h3 id="confirmation">Hi</h3>
+        <h3 id="bonus"></h3>
+        <h3 id="network"></h3>
+    </div>
+    <div class="rebuy">
+        <button type="submit" id="rebuy">Buy Again</button>
+    </div>
+    
+
+
+    <script src="index.js"></script>
+</body>
+</html>

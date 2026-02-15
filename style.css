@@ -1,0 +1,72 @@
+header{
+    text-transform: uppercase;
+    font-size: 1.2em;
+    text-align: center;
+    color: #272adb;
+    width:100%;
+    margin:0;
+    padding: 10px;
+    background-color: aliceblue;
+}
+input#phone,
+input#amount {
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    border-style: none;
+    font-size: 0.9em;
+    padding: 5px;
+    background-color: rgb(205, 197, 144);
+    color:rgb(249, 252, 255);
+}
+#phone:focus,
+#amount:focus {
+    outline: 2px solid rgb(9, 234, 17);
+    color: rgb(0, 0, 0);
+    background-color: rgb(249, 252, 255);
+
+}
+
+.maincontent{
+    background-color: #6bc1d2;
+    display: inline-block;
+    width:400px; 
+    margin-top:2px;  
+    margin-left: 30%;
+    padding: 20px;
+    font-size: 1.2em;
+}
+button{
+    background-color: #5052ed;
+    color: white;
+    border-radius: 10px;
+    width:100px;
+    height:30px;
+    border-style: none;
+    cursor: pointer;
+    align-items: right;
+}
+button:hover{
+    background-color: rgb(6, 6, 178);
+    box-shadow: 0 0 10px greenyellow;
+}
+.output{
+    background-color: rgb(208, 29, 169);
+    width:380px;
+    margin:5px;
+    margin-left: 33%;
+    color: white;   
+    padding: 20px;
+}
+.output h3{
+    margin: 10px;
+    font-size: 1.2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+
+}
+.rebuy {
+    display: flex;
+    justify-content: center;
+    align-items: right;
+}
