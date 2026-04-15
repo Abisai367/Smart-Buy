@@ -1,0 +1,133 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+header{
+    text-transform: uppercase;
+    font-size: 1.2em;
+    text-align: center;
+    color: #272adb;
+    width:100%;
+    margin:0;
+    padding: 10px;
+    background-color: aliceblue;
+}
+body{
+    animation: 20s linear infinite backchange;
+}
+@keyframes backchange {
+    0%{background-color: #220c0c;}
+    20%{background-color: #011c4b;}
+    40%{background-color: #4b022f;}
+    60%{background-color: #014b17;}
+    80%{background-color: #5e4101;}
+    100%{background-color: #59183c;}
+    
+}
+input#phone,
+input#amount {
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    border-style: none;
+    font-size: 0.9em;
+    padding: 5px;
+    background-color: rgb(205, 197, 144);
+    color:rgb(249, 252, 255);
+}
+#phone:focus,
+#amount:focus {
+    outline: 2px solid rgb(9, 234, 17);
+    color: rgb(0, 0, 0);
+    background-color: rgb(249, 252, 255);
+
+}
+
+.maincontent{
+    background-color: #6bc1d2;
+    display: inline-block;
+    width:400px; 
+    margin-top:2px;  
+    margin-left: 30%;
+    padding: 20px;
+    font-size: 1.2em;
+}
+button{
+    background-color: #5052ed;
+    color: white;
+    border-radius: 10px;
+    border-style: none;
+    cursor: pointer;
+    align-items: right;
+    transition: 0.3s background;
+}
+button:hover{
+    background-color: rgb(6, 6, 178);
+}
+button:active{
+    transform: scale(0.95);
+}
+.output{
+    background-color: rgb(208, 29, 169);
+    width:380px;
+    margin:5px;
+    margin-left: 33%;
+    color: white;   
+    padding: 20px;
+    border-radius: 15px;
+}
+.output h3{
+    margin: 10px;
+    font-size: 1.2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+
+}
+.rebuy {
+    display: flex;
+    justify-content: center;
+    align-items: right;
+}
+@media screen and (max-width: 1000px){
+    header{
+        width: 100vw;
+        margin: 5px 0 0 0;
+        padding: 15px;
+  
+    }
+    header h2{
+        font-size: 40pt;
+        padding: 15px;
+    }
+    body{
+        width: 100vw !important;
+        height: 100vh;
+        overflow: hidden !important; 
+        display: flex;
+        flex-direction: column;
+        padding-top: 5vh;
+    }
+    .maincontent{
+        margin: 3px 0px;
+        width: 100vw;
+        font-size: 30pt;
+    }
+    .output{
+        margin: 0 2px 6px 10px;
+        width: 90%;
+        font-size: 18pt;
+        line-height: 1.5;
+    }
+    button{
+        font-size: 23pt;
+        padding: 20px;
+    }
+    input#phone,
+    input#amount{
+        width: 60%;
+        height: 9%;
+    }
+
+}
